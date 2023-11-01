@@ -1,0 +1,11 @@
+int lastNum(int n)
+{
+    int c = 1;
+    if (n < 1000)
+        for (int i = 1; i < n + 1; i++)
+        {
+            c *= i;
+
+        }
+    string d = Convert.ToString(c);
+    return c % (10 * d.Length);
