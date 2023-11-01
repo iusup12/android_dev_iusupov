@@ -1,0 +1,19 @@
+using System;
+double x0 = double.Parse(Console.ReadLine());
+double y0 = double.Parse(Console.ReadLine());
+int n = int.Parse(Console.ReadLine());
+double mindist = double.MaxValue;
+double rad = double.Parse(Console.ReadLine());
+double xmin = 0;
+double ymin = 0;
+double x;
+double y;
+for (int i = 0; i < n; i++)
+{
+    x = double.Parse(Console.ReadLine());
+    y = double.Parse(Console.ReadLine());
+    if (((x0 - x) * (x0 - x) + (y0 - y) * (y0 - y)) > rad * rad && ((x0 - x) * (x0 - x) + (y0 - y) * (y0 - y)) <= mindist)
+        xmin = x; ymin = y; mindist = ((x0 - x) * (x0 - x) + (y0 - y) * (y0 - y));
+}
+Console.WriteLine(xmin);
+Console.WriteLine(ymin);
