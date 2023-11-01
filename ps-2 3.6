@@ -1,0 +1,97 @@
+using System;
+using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
+using System.Linq;
+using System.Net;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace PS_2_3._6
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+
+            Console.WriteLine(Left_rectangles(0, 4, 100));
+            Console.WriteLine(Right_rectangles(0, 4, 100));
+            Console.WriteLine(Trapezoid(0, 4, 100));
+            Console.WriteLine(Simpson(0, 4, 100));
+            Console.WriteLine(Monte_Carlo(0, 4, 10000));
+            Console.ReadLine();
+        }
+        static double F(double x)
+        {
+            return Math.Cos(Math.Sin(x));
+
+        }
+        static double Left_rectangles(double left, double right, int n)
+        {
+            double h = (right - left) / n;
+            double sum = 0;
+            for (int i = 0; i < n; i++)
+            {
+                sum += F(left + i * h);
+            }
+            double res = sum * h;
+            return res;
+        }
+        static double Right_rectangles(double left, double right, int n)
+        {
+            double h = (right - left) / n;
+            double sum = 0;
+            double x = left;
+            for (int i = 0; i < n; i++)
+            {
+                sum += F(x);
+                x += h;
+            }
+            double res = sum * h;
+            return res;
+        }
+        static double Trapezoid(double left, double right, int n)
+        {
+            double h = (right - left) / n;
+            double sum = 0.5 * (F(left) + F(right));
+            for (int i = 1; i < n; i++)
+            {
+                sum += F(left + i * h);
+            }
+            sum *= h;
+            return sum;
+        }
+        static double Simpson(double left, double right, int n)
+        {
+            double h = (right - left) / n;
+            double sum = F(left) + F(right);
+            for (int i = 1; i < n; i++)
+            {
+                double x = left + i * h;
+                if (i % 2 == 0)
+                    sum += 2 * F(x);
+                else
+                    sum += 4 * F(x);
+            }
+            sum *= h / 3;
+            return sum;
+
+        }
+        static double Monte_Carlo(double left, double right, int n)
+        {
+            Random random = new Random();
+            double M = F(right);
+            double sum = 0;
+            for (int i = 0; i < n; i++)
+            {
+                double x = random.NextDouble() * (right - left) + left;
+                double y = random.NextDouble() * M;
+                if (y <= F(x)) sum++;
+
+            }
+            double res = (sum / n) * (right - left) * M;
+            return res;
+        }
+    }
+
+}
+
