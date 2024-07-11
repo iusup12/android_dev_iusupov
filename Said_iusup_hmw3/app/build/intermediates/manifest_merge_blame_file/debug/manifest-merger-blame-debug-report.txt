@@ -1,0 +1,98 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.example.filedemo3"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->C:\Users\Aisyly\AndroidStudioProjects\Said_iusup_hmw3\app\src\main\AndroidManifest.xml
+9        android:targetSdkVersion="31" />
+9-->C:\Users\Aisyly\AndroidStudioProjects\Said_iusup_hmw3\app\src\main\AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+11-->C:\Users\Aisyly\AndroidStudioProjects\Said_iusup_hmw3\app\src\main\AndroidManifest.xml:6:5-80
+11-->C:\Users\Aisyly\AndroidStudioProjects\Said_iusup_hmw3\app\src\main\AndroidManifest.xml:6:22-77
+12    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+12-->C:\Users\Aisyly\AndroidStudioProjects\Said_iusup_hmw3\app\src\main\AndroidManifest.xml:7:5-81
+12-->C:\Users\Aisyly\AndroidStudioProjects\Said_iusup_hmw3\app\src\main\AndroidManifest.xml:7:22-78
+13    <uses-permission android:name="android.permission.INTERNET" />
+13-->C:\Users\Aisyly\AndroidStudioProjects\Said_iusup_hmw3\app\src\main\AndroidManifest.xml:8:5-67
+13-->C:\Users\Aisyly\AndroidStudioProjects\Said_iusup_hmw3\app\src\main\AndroidManifest.xml:8:22-64
+14    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+14-->C:\Users\Aisyly\AndroidStudioProjects\Said_iusup_hmw3\app\src\main\AndroidManifest.xml:9:5-11:40
+14-->C:\Users\Aisyly\AndroidStudioProjects\Said_iusup_hmw3\app\src\main\AndroidManifest.xml:10:9-66
+15
+16    <application
+16-->C:\Users\Aisyly\AndroidStudioProjects\Said_iusup_hmw3\app\src\main\AndroidManifest.xml:13:5-32:19
+17        android:allowBackup="true"
+17-->C:\Users\Aisyly\AndroidStudioProjects\Said_iusup_hmw3\app\src\main\AndroidManifest.xml:14:9-35
+18        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+18-->[androidx.core:core:1.7.0] C:\Users\Aisyly\.gradle\caches\transforms-3\a13bf12f40cbb75974e87b7a5ed12542\transformed\core-1.7.0\AndroidManifest.xml:24:18-86
+19        android:debuggable="true"
+20        android:icon="@mipmap/ic_launcher"
+20-->C:\Users\Aisyly\AndroidStudioProjects\Said_iusup_hmw3\app\src\main\AndroidManifest.xml:15:9-43
+21        android:label="@string/app_name"
+21-->C:\Users\Aisyly\AndroidStudioProjects\Said_iusup_hmw3\app\src\main\AndroidManifest.xml:16:9-41
+22        android:requestLegacyExternalStorage="true"
+22-->C:\Users\Aisyly\AndroidStudioProjects\Said_iusup_hmw3\app\src\main\AndroidManifest.xml:17:9-52
+23        android:roundIcon="@mipmap/ic_launcher"
+23-->C:\Users\Aisyly\AndroidStudioProjects\Said_iusup_hmw3\app\src\main\AndroidManifest.xml:18:9-48
+24        android:supportsRtl="true"
+24-->C:\Users\Aisyly\AndroidStudioProjects\Said_iusup_hmw3\app\src\main\AndroidManifest.xml:19:9-35
+25        android:testOnly="true"
+26        android:theme="@style/Iusup_hmw3" >
+26-->C:\Users\Aisyly\AndroidStudioProjects\Said_iusup_hmw3\app\src\main\AndroidManifest.xml:20:9-42
+27        <activity
+27-->C:\Users\Aisyly\AndroidStudioProjects\Said_iusup_hmw3\app\src\main\AndroidManifest.xml:21:9-29:20
+28            android:name="com.example.Iusup_hmw3.MainActivity"
+28-->C:\Users\Aisyly\AndroidStudioProjects\Said_iusup_hmw3\app\src\main\AndroidManifest.xml:22:13-63
+29            android:exported="true" >
+29-->C:\Users\Aisyly\AndroidStudioProjects\Said_iusup_hmw3\app\src\main\AndroidManifest.xml:23:13-36
+30            <intent-filter>
+30-->C:\Users\Aisyly\AndroidStudioProjects\Said_iusup_hmw3\app\src\main\AndroidManifest.xml:24:13-28:29
+31                <action android:name="android.intent.action.MAIN" />
+31-->C:\Users\Aisyly\AndroidStudioProjects\Said_iusup_hmw3\app\src\main\AndroidManifest.xml:25:17-69
+31-->C:\Users\Aisyly\AndroidStudioProjects\Said_iusup_hmw3\app\src\main\AndroidManifest.xml:25:25-66
+32
+33                <category android:name="android.intent.category.LAUNCHER" />
+33-->C:\Users\Aisyly\AndroidStudioProjects\Said_iusup_hmw3\app\src\main\AndroidManifest.xml:27:17-77
+33-->C:\Users\Aisyly\AndroidStudioProjects\Said_iusup_hmw3\app\src\main\AndroidManifest.xml:27:27-74
+34            </intent-filter>
+35        </activity>
+36        <activity android:name="com.example.Iusup_hmw3.Main2Activity" />
+36-->C:\Users\Aisyly\AndroidStudioProjects\Said_iusup_hmw3\app\src\main\AndroidManifest.xml:31:9-72
+36-->C:\Users\Aisyly\AndroidStudioProjects\Said_iusup_hmw3\app\src\main\AndroidManifest.xml:31:19-70
+37
+38        <provider
+38-->[com.squareup.picasso:picasso:2.71828] C:\Users\Aisyly\.gradle\caches\transforms-3\d563123af30b72c3d68fd5bc1d194266\transformed\jetified-picasso-2.71828\AndroidManifest.xml:8:9-11:40
+39            android:name="com.squareup.picasso.PicassoProvider"
+39-->[com.squareup.picasso:picasso:2.71828] C:\Users\Aisyly\.gradle\caches\transforms-3\d563123af30b72c3d68fd5bc1d194266\transformed\jetified-picasso-2.71828\AndroidManifest.xml:9:13-64
+40            android:authorities="com.example.filedemo3.com.squareup.picasso"
+40-->[com.squareup.picasso:picasso:2.71828] C:\Users\Aisyly\.gradle\caches\transforms-3\d563123af30b72c3d68fd5bc1d194266\transformed\jetified-picasso-2.71828\AndroidManifest.xml:10:13-72
+41            android:exported="false" />
+41-->[com.squareup.picasso:picasso:2.71828] C:\Users\Aisyly\.gradle\caches\transforms-3\d563123af30b72c3d68fd5bc1d194266\transformed\jetified-picasso-2.71828\AndroidManifest.xml:11:13-37
+42        <provider
+42-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Aisyly\.gradle\caches\transforms-3\f7f3204f74ad4132685e5d2c2460d9ff\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:26:9-34:20
+43            android:name="androidx.startup.InitializationProvider"
+43-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Aisyly\.gradle\caches\transforms-3\f7f3204f74ad4132685e5d2c2460d9ff\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:27:13-67
+44            android:authorities="com.example.filedemo3.androidx-startup"
+44-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Aisyly\.gradle\caches\transforms-3\f7f3204f74ad4132685e5d2c2460d9ff\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:28:13-68
+45            android:exported="false" >
+45-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Aisyly\.gradle\caches\transforms-3\f7f3204f74ad4132685e5d2c2460d9ff\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:29:13-37
+46            <meta-data
+46-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Aisyly\.gradle\caches\transforms-3\f7f3204f74ad4132685e5d2c2460d9ff\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:31:13-33:52
+47                android:name="androidx.emoji2.text.EmojiCompatInitializer"
+47-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Aisyly\.gradle\caches\transforms-3\f7f3204f74ad4132685e5d2c2460d9ff\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:32:17-75
+48                android:value="androidx.startup" />
+48-->[androidx.emoji2:emoji2:1.0.0] C:\Users\Aisyly\.gradle\caches\transforms-3\f7f3204f74ad4132685e5d2c2460d9ff\transformed\jetified-emoji2-1.0.0\AndroidManifest.xml:33:17-49
+49            <meta-data
+49-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Aisyly\.gradle\caches\transforms-3\0f4fec8d93c374894bea4f10d446756e\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:31:13-33:52
+50                android:name="androidx.lifecycle.ProcessLifecycleInitializer"
+50-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Aisyly\.gradle\caches\transforms-3\0f4fec8d93c374894bea4f10d446756e\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:32:17-78
+51                android:value="androidx.startup" />
+51-->[androidx.lifecycle:lifecycle-process:2.4.0] C:\Users\Aisyly\.gradle\caches\transforms-3\0f4fec8d93c374894bea4f10d446756e\transformed\jetified-lifecycle-process-2.4.0\AndroidManifest.xml:33:17-49
+52        </provider>
+53    </application>
+54
+55</manifest>
