@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_home"
+        android:icon="@mipmap/ic_fileter_one"
+        android:title="Home" />
+    <item
+        android:id="@+id/nav_dashboard"
+        android:icon="@mipmap/ic_filter_two"
+        android:title="Dashboard" />
+    <item
+        android:id="@+id/nav_notifications"
+        android:icon="@mipmap/ic_bq"
+        android:title="Notifications" />
+    <item
+        android:id="@+id/nav_profile"
+        android:icon="@mipmap/ic_charge"
+        android:title="Profile" />
+    <item
+        android:id="@+id/nav_settings"
+        android:icon="@mipmap/ic_circle_comment"
+        android:title="Settings" />
+</menu>
